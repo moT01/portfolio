@@ -1,0 +1,20 @@
+:root {
+  /* colors */
+  --primary-color: #ff9900;
+  --primary-background: #264d73;
+  --secondary-color: #b36b00;
+  --secondary-background: #45586b;
+  --tertiary-color: #804d00;
+
+  --white: #d9d9d9;
+  --black: #000000;
+
+  /* fonts */
+  --header-font: Audiowide, sans-serif;
+  --paragraph-font: Playfair, serif;
+  --form-font: Sen, sans-serif;
+
+  /* sizes */
+  --header-height: 80px;
+  --footer-height: 80px;
+}

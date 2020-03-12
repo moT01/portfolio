@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Viga';
+  src: url('../assets/fonts/Viga-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu-Regular';
+  src: url('../assets/fonts/Ubuntu-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu-Light';
+  src: url('../assets/fonts/Ubuntu-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Audiowide';
+  src: url('../assets/fonts/Audiowide-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair';
+  src: url('../assets/fonts/PlayfairDisplay-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sen';
+  src: url('../assets/fonts/Sen-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}

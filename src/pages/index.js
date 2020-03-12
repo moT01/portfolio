@@ -1,20 +1,24 @@
-import React from "react"
-import { Link } from "gatsby"
+// package utilities
+import React from 'react'
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+// components
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
+// assets
+import TmLogo from '../assets/images/tm-logo'
+
+// stylesheets
+import './index.css'
+
+// component
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+  <Layout displayLogo={false}>
+    <SEO title='Home' />
+    <section className='index'>
+      <TmLogo color='var(--white)' className='index-logo' />
+      <h1 className='index-description'>full stack web developer</h1>
+    </section>
   </Layout>
 )
 
