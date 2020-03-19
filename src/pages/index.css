@@ -1,7 +1,7 @@
 .index {
   background-color: var(--blue-1);
   width: 100%;
-  padding: 15px 0 calc(25px + var(--footer-height)) 0;
+  padding: 5px 0 calc(25px + var(--footer-height)) 0;
 }
 
 .index-description {
@@ -15,8 +15,7 @@
     var(--blue-2)
   );
   border-image-slice: 1;
-  border-right: none;
-  border-left: none;
+  border-left-width: 0;
   background: var(--blue-2);
   font-family: var(--header-font);
   font-size: 33px;
@@ -28,14 +27,22 @@
   max-width: 100%;
 }
 
-.index > svg > g {
+.index > svg > g > g:first-child {
   stroke-dasharray: 1350;
   stroke-dashoffset: 1350;
-  animation-name: dash;
-  animation-duration: 2500ms;
-  animation-direction: forwards;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
+  animation: dash 2500ms linear forwards;
+}
+
+.index > svg > g > g:nth-child(2) {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: dash 2000ms linear forwards 250ms;
+}
+
+.index > svg > g > g:nth-child(3) {
+  stroke-dasharray: 150;
+  stroke-dashoffset: 150;
+  animation: dash 1000ms linear forwards 1250ms;
 }
 
 @keyframes dash {
