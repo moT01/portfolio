@@ -31,7 +31,11 @@
 .index > svg > g {
   stroke-dasharray: 1350;
   stroke-dashoffset: -1350;
-  animation: dash 2500ms linear forwards;
+  animation-name: dash;
+  animation-duration: 2500ms;
+  animation-direction: forwards;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }
 
 @keyframes dash {
