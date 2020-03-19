@@ -30,7 +30,7 @@
 
 .index > svg > g {
   stroke-dasharray: 1350;
-  stroke-dashoffset: -1350;
+  stroke-dashoffset: 1350;
   animation-name: dash;
   animation-duration: 2500ms;
   animation-direction: forwards;
