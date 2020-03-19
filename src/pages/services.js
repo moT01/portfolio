@@ -9,11 +9,7 @@ import SEO from '../components/seo'
 const Services = () => (
   <Layout>
     <SEO title='Services' />
-    <section className='projects'>
-      SEO Modern Technologies Responsive Design Custom Design Accessibility
-      Optimization Blazing fast Maintenance Front end Back End Web Services
-      Compatible (edge firefox chrome)
-    </section>
+    <section className='projects'></section>
   </Layout>
 )
 
