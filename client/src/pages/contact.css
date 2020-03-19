@@ -1,0 +1,99 @@
+.contact {
+  margin: 100px 0 0 50px;
+  padding-bottom: 150px;
+  color: var(--white-2);
+  font-family: var(--paragraph-font);
+  font-size: 20px;
+}
+
+.contact-name-email-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.contact-field {
+  background-color: var(--white-2);
+  font-family: inherit;
+  font-size: 20px;
+  margin: 10px 0;
+  padding: 5px 8px;
+  border-radius: 3px;
+}
+
+.contact-field:focus,
+.contact-field:active {
+  border: 2px solid var(--orange-2);
+}
+
+.contact-name {
+  margin-right: 20px;
+  width: 100%;
+}
+
+.contact-email {
+  width: 100%;
+}
+
+.contact-textarea {
+  resize: none;
+}
+
+.contact-checkbox-wrap {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.contact-checkbox {
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+}
+
+.contact-checkbox-submit-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-submit {
+  width: 40%;
+  cursor: pointer;
+  padding: 5px 20px;
+}
+
+@media (max-width: 1000px) {
+  .contact-form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact {
+    margin: 50px 15px 0 15px;
+    padding-bottom: 150px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-checkbox-submit-wrap {
+    display: unset;
+  }
+
+  .contact-name-email-wrap {
+    display: unset;
+  }
+
+  .contact-submit {
+    width: 100%;
+  }
+}

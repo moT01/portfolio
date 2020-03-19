@@ -1,49 +1,36 @@
 {
-  "name": "tom-mondloch-portfolio",
-  "private": true,
-  "description": "Tom Mondloch Portfolio",
-  "version": "0.1.0",
-  "author": "Tom Mondloch",
-  "dependencies": {
-    "font-awesome": "^4.7.0",
-    "gatsby": "^2.19.7",
-    "gatsby-image": "^2.2.39",
-    "gatsby-plugin-manifest": "^2.2.39",
-    "gatsby-plugin-offline": "^3.0.32",
-    "gatsby-plugin-react-helmet": "^3.1.21",
-    "gatsby-plugin-sharp": "^2.4.3",
-    "gatsby-source-filesystem": "^2.1.46",
-    "gatsby-transformer-sharp": "^2.3.13",
-    "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-fontawesome": "^1.7.1",
-    "react-helmet": "^5.2.1"
-  },
-  "devDependencies": {
-    "prettier": "^1.19.1"
-  },
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "https://mot01.netlify.com/",
   "engines": {
-    "node": "10.15.0"
+    "node": "13.11.0"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
+  "main": "server.js",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm run start --prefix client",
+    "develop": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "netlify-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "install-all": "npm install && npm install --prefix client",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mot01/portfolio"
+    "url": "git+https://github.com/moT01/portfolio.git"
   },
+  "author": "Tom Mondloch",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mot01/portfolio/issues"
+    "url": "https://github.com/moT01/portfolio/issues"
+  },
+  "homepage": "https://github.com/moT01/portfolio#readme",
+  "dependencies": {
+    "concurrently": "^5.1.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1"
   }
 }
