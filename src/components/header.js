@@ -14,7 +14,7 @@ const Header = ({ displayLogo = true, siteTitle }) => (
   <header className='header'>
     {displayLogo ? (
       <Link className='header-logo' to='/'>
-        <TmLogo color={'var(--white)'} />
+        <TmLogo color={'var(--white-2)'} />
       </Link>
     ) : (
       <span></span>
@@ -27,9 +27,13 @@ const Header = ({ displayLogo = true, siteTitle }) => (
       <div className='header-hamburger-line header-hamburger-line-bottom'></div>
     </label>
 
+    <div className='header-overlay'></div>
     <nav className='header-nav'>
       <Link className='header-nav-link' to='/about'>
         about
+      </Link>
+      <Link className='header-nav-link' to='/services'>
+        services
       </Link>
       <Link className='header-nav-link' to='/projects'>
         projects
@@ -44,11 +48,13 @@ const Header = ({ displayLogo = true, siteTitle }) => (
 // proptypes
 Header.propTypes = {
   siteTitle: PropTypes.string,
+  displayLogo: PropTypes.bool,
 }
 
 // default props
 Header.defaultProps = {
   siteTitle: ``,
+  displayLogo: true,
 }
 
 export default Header

@@ -1,6 +1,9 @@
+// package utilities
 import React from 'react'
+import PropTypes from 'prop-types'
 
-function TmLogo({ color = '#000', strokeWidth = '5' }) {
+// component
+function TmLogo({ color = '#fff', strokeWidth = '5' }) {
   return (
     <svg
       version='1.1'
@@ -68,6 +71,18 @@ function TmLogo({ color = '#000', strokeWidth = '5' }) {
       </g>
     </svg>
   )
+}
+
+// proptypes
+TmLogo.propTypes = {
+  color: PropTypes.string,
+  strokeWidth: PropTypes.string,
+}
+
+// default props
+TmLogo.defaultProps = {
+  color: '#fff',
+  strokeWidth: '5',
 }
 
 TmLogo.displayName = 'TmLogo'

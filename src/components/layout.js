@@ -30,7 +30,7 @@ const Layout = ({ children, displayLogo = true }) => {
         displayLogo={displayLogo}
         siteTitle={data.site.siteMetadata.title}
       />
-      <main>{children}</main>
+      <main className='layout'>{children}</main>
       <Footer />
     </>
   )

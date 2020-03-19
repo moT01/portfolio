@@ -1,16 +1,26 @@
 .index {
-  background-color: var(--primary-background);
+  background-color: var(--blue-1);
   width: 100%;
-  padding: 15px 0 calc(25px + var(--footer-height)) 15px;
+  padding: 15px 0 calc(25px + var(--footer-height)) 0;
 }
 
 .index-description {
   padding: 100px 40px;
-  border: 2px solid var(--secondary-color);
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(
+    to right,
+    var(--white-2),
+    var(--blue-2) 50%,
+    var(--blue-2)
+  );
+  border-image-slice: 1;
   border-right: none;
-  background-color: var(--secondary-background);
-  font-family: var(--paragraph-font);
+  border-left: none;
+  background: var(--blue-2);
+  font-family: var(--header-font);
   font-size: 33px;
+  color: var(--white-1);
 }
 
 .index > svg {

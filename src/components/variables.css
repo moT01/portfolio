@@ -1,18 +1,28 @@
 :root {
   /* colors */
-  --primary-color: #ff9900;
-  --primary-background: #264d73;
+  --orange-1: #ff9900;
+  --orange-2: #b36b00;
+  --orang-3: #804d00;
+  --blue-1: #264d73;
+  --blue-2: #45586b;
+  --white-1: #f2f2f2;
+  --white-2: #d9d9d9;
+  --black-1: #000000;
+
+  /*  --primary-color: #264d73;
+  --primary-background: #f2f2f2;
+  --primary-text: #264d73;
   --secondary-color: #b36b00;
   --secondary-background: #45586b;
+  --secondary-text: #d9d9d9;
   --tertiary-color: #804d00;
-
-  --white: #d9d9d9;
-  --black: #000000;
+  --tertiary-text: #000000;
+*/
 
   /* fonts */
-  --header-font: Audiowide, sans-serif;
-  --paragraph-font: Playfair, serif;
-  --form-font: Sen, sans-serif;
+  --nav-font: Audiowide, sans-serif;
+  --header-font: Playfair, serif;
+  --paragraph-font: Sen, sans-serif;
 
   /* sizes */
   --header-height: 80px;
